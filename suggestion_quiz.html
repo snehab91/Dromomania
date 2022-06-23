@@ -1,0 +1,297 @@
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7f7 100%);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 100vh;*/
+  overflow-y: scroll; 
+  margin: 0;
+}
+.quiz-container{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 600px;
+  overflow: hidden;
+}
+.quiz-header{
+  padding: 4rem;
+}
+h2{
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+ul li{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+ul li label{
+  cursor: pointer;
+}
+button{
+  background-color: #03cae4;
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+}
+button:hover{
+  background-color: #04adc4;
+}
+button:focus{
+  outline: none;
+  background-color: #44b927;
+}
+        </style>
+
+    </head>
+    <body>
+        <div class="quiz-container" id="quiz">
+            <label style="background-color: aquamarine"><h1 align="center">Travel Suggestion Quiz :)</h1></label>
+            <div class="quiz-header">
+              <h2 id="question1">What I picture my ideal vacation, I see myself...</h2>
+              <ul>
+                <li>
+                  <input type="radio" name="answer" id="a" class="answer">
+                  <label for="a" id="a_text">Exploring a large city</label>
+                </li>
+        
+                <li>
+                  <input type="radio" name="answer" id="b" class="answer">
+                  <label for="b" id="b_text">Relaxing on the beach</label>
+                </li>
+        
+                <li>
+                  <input type="radio" name="answer" id="c" class="answer">
+                  <label for="c" id="c_text">Chilling out with some winter sports</label>
+                </li>
+        
+                <li>
+                  <input type="radio" name="answer" id="d" class="answer">
+                  <label for="d" id="d_text">Other/Doesn't Matter</label>
+                </li>
+        
+              </ul>
+            </div>
+            <div class="quiz-header">
+                <h2 id="question2">When I go on vacation the cost of things is...</h2>
+                <ul>
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">No limit on the budget</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Not a big concern, as long as it's in my budget.</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">A big concern, getting the most for my money is important.</label>
+                  </li>
+          
+                </ul>
+              </div>
+              <div class="quiz-header">
+                <h2 id="question3">How are you travelling?</h2>
+                <ul>
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Solo</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">As a couple</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">With Family</label>
+                  </li>
+          
+                </ul>
+              </div>
+              <div class="quiz-header">
+                <h2 id="question4">When I'm in a strange land...</h2>
+                <ul>
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">The last thing I want to see is someone from my own country.</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">I like to see different people, but it's nice to see a friendly face from back home.</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">I feel a lot more comfortable around people from my country whom I can relate to.</label>
+                  </li>
+          
+                </ul>
+              </div>
+              <div class="quiz-header">
+                <h2 id="question5">Crime in the place I visit..</h2>
+                <ul>
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">adds to part of the adventure!</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">is a necessary evil...as long as we're talking pickpockets, not kidnapping.</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">should be rare, I want to return home with everything I came with!</label>
+                  </li>
+          
+                </ul>
+              </div>
+              <div class="quiz-header">
+                <h2 id="question6">When I go on this vacation I want to...</h2>
+                <ul>
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">come home in one piece, so I plan to stay near the resort.</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">get off the beaten path, and maybe do something not completely safe</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">climb Mt Everest, swim with sharks, or hang out with rebel militia.</label>
+                  </li>
+          
+                </ul>
+              </div>
+              <div class="quiz-header">
+                <h2 id="question7">On this vacation, I'm interested in a place with a rich history...</h2>
+                <ul>
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">of serving large margaritas on the beach!</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">I plan to visit a museum or two to read about it.</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">I'm a history buff, and I want to stand where Napolean stood</label>
+                  </li>
+          
+                </ul>
+              </div>
+              <div class="quiz-header">
+                <h2 id="question8">When I go out to eat on vacation...</h2>
+                <ul>
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">I just want some energy to get me through the day</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">I like to sample the local food, and go out to eat often</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">I look for world class cuisine, fine wine, and meals to remember</label>
+                  </li>
+          
+                </ul>
+              </div>
+              <div class="quiz-header">
+                <h2 id="question9">On my typical trip I enjoy nature by...</h2>
+                <ul>
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">rolling down my window on the way to the hotel.</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">usually do one or two things outside.</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">spending most of my time outdoors, be it trekking jungles or diving in the ocean.</label>
+                  </li>
+          
+                </ul>
+              </div>
+
+              <div class="quiz-header">
+                <h2 id="question10">What about the average high temperature?</h2>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Hot (&gt;90F)</label>
+                  </li>
+          
+                  <li>
+                    <input type="checkbox" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Warm (70-90F)</label>
+                  </li>
+          
+                  <li>
+                    <input type="checkbox" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Moderate (50-70F)</label>
+                  </li>
+  
+                  <li>
+                      <input type="checkbox" name="answer" id="d" class="answer">
+                      <label for="d" id="d_text">Cool (30-50F)</label>
+                    </li>
+  
+                    <li>
+                      <input type="checkbox" name="answer" id="e" class="answer">
+                      <label for="e" id="e_text">Cold (&lt; 30F)</label>
+                    </li>
+          
+                </ul>
+              </div>
+              
+              
+        
+            <button id="submit">Submit</button>
+        
+          </div>
+
+    </body>
+
+</html>
